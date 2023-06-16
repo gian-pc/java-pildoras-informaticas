@@ -11,6 +11,22 @@ public class Vehiculos {
         color = "sin color";
     }
 
+    public void setExtra(boolean climatizador){
+        this.climatizador = climatizador;
+    }
+
+    public void setExtra(boolean gps, boolean climatizador, boolean tapiceriaCuero){
+        this.gps = gps;
+        this.climatizador = climatizador;
+        this.tapiceriaCuero = tapiceriaCuero;
+    }
+
+
+    public String getExtra() {
+        if(climatizador) return "Tu coche tiene climatizador";
+        else return "Tu coche no tiene climatizador";
+    }
+
     public void setColor(String color){
         this.color = color;
     }
@@ -28,4 +44,7 @@ public class Vehiculos {
     private int largo;
     private int ancho;
     private int peso;
+    private boolean climatizador;
+    private boolean tapiceriaCuero;
+    private boolean gps;
 }

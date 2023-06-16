@@ -1,4 +1,4 @@
-package paucar.gian.poo.ejercicios;
+package paucar.gian.poo.ejercicios.ejercicio1;
 
 public class UsoCuenta {
     public static void main(String[] args) {

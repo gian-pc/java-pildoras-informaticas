@@ -8,5 +8,9 @@ public class UsoVehiculos {
 
         System.out.println(miCoche.getDatosVehiculo());
         System.out.println(miCoche.getColor());
+
+        Vehiculos miCoche2 = new Vehiculos(4);
+        miCoche2.setExtra(true);
+        System.out.println(miCoche2.getExtra());
     }
 }

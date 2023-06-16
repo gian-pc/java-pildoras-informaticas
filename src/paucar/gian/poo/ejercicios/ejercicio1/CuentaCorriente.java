@@ -1,4 +1,4 @@
-package paucar.gian.poo.ejercicios;
+package paucar.gian.poo.ejercicios.ejercicio1;
 
 import java.util.Random;
 
@@ -41,6 +41,8 @@ public class CuentaCorriente {
         titu2.saldo += cantidad;
 
     }
+
+
 
 
 }
