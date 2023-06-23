@@ -1,3 +1,5 @@
+package paucar.gian.inicio;
+
 import java.awt.*;
 import java.util.Scanner;
 

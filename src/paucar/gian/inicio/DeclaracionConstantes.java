@@ -1,3 +1,5 @@
+package paucar.gian.inicio;
+
 public class DeclaracionConstantes {
     public static void main(String[] args) {
 

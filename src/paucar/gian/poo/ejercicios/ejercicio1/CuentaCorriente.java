@@ -36,13 +36,11 @@ public class CuentaCorriente {
                 "Saldo: " + saldo;
     }
 
-    public static void transferencia(CuentaCorriente titu1, CuentaCorriente titu2, double cantidad){
+    public static void transferencia(CuentaCorriente titu1, CuentaCorriente titu2, double cantidad) {
         titu1.saldo -= cantidad;
         titu2.saldo += cantidad;
 
     }
-
-
 
 
 }

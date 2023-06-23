@@ -1,3 +1,5 @@
+package paucar.gian.inicio;
+
 public class ManipulaCadenas {
     public static void main(String[] args) {
 

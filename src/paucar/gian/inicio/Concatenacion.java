@@ -1,3 +1,5 @@
+package paucar.gian.inicio;
+
 public class Concatenacion {
     public static void main(String[] args) {
         double salario = 1850.55;

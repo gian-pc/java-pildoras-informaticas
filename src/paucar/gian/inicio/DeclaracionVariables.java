@@ -1,3 +1,5 @@
+package paucar.gian.inicio;
+
 public class DeclaracionVariables {
     public static void main(String[] args) {
         int edad;
