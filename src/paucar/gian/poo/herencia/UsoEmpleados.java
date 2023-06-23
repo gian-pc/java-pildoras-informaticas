@@ -5,12 +5,11 @@ import java.util.GregorianCalendar;
 public class UsoEmpleados {
     public static void main(String[] args) {
 
+        Empleados Antonio = new Empleados("Antonio", 2500, 2023, 12, 17);
+        Jefes Ana = new Jefes("Ana", 1500, 2018, 5, 28);
 
-        Empleados Antonio = new Empleados("Antonio",2500,2023,12,17);
-        Jefes Ana = new Jefes("Ana",1500,2018,5,28);
-
+        Ana.setIncentivo(500);
         System.out.println(Ana.getSueldo());
-
     }
 }
 
@@ -29,7 +28,6 @@ class Empleados {
         Id = IdSiguiente;
         IdSiguiente++;
     }
-
 
     public String getDatosEmpleado() {
         return "El empleado " + nombre + " tiene el Id " + Id;
@@ -53,8 +51,20 @@ class Empleados {
     }
 }
 
-class Jefes extends Empleados{
+class Jefes extends Empleados {
+    private double incentivo;
+
     public Jefes(String nombre, double sueldo, int anio, int mes, int dia) {
         super(nombre, sueldo, anio, mes, dia);
+
+    }
+
+    public void setIncentivo(double b) {
+        incentivo = b;
+    }
+
+    public double getSueldo() {
+        double sueldoJefe = super.getSueldo(); // llama al método de la clase padre y no al suyo
+        return sueldoJefe + incentivo;
     }
 }
