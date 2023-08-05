@@ -2,6 +2,15 @@ package paucar.gian.poo;
 
 public class Vehiculos {
 
+    private int ruedas;
+    private String color;
+    private int largo;
+    private int ancho;
+    private int peso;
+    private boolean climatizador;
+    private boolean tapiceriaCuero;
+    private boolean gps;
+
     public Vehiculos(int ruedas) {
 
         this.ruedas = 4;
@@ -38,13 +47,4 @@ public class Vehiculos {
     public String getDatosVehiculo(){
         return "Tu vehículo tiene "+ ruedas + " ruedas. Además tiene "+largo+ " m de largo";
     }
-
-    private int ruedas;
-    private String color;
-    private int largo;
-    private int ancho;
-    private int peso;
-    private boolean climatizador;
-    private boolean tapiceriaCuero;
-    private boolean gps;
 }
