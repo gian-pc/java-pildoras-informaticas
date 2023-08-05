@@ -28,6 +28,9 @@ class MiJFrame extends JFrame {
         //setLocation(600, 350);
         //setExtendedState(Frame.MAXIMIZED_BOTH);
         setTitle("Ventana de pruebas");
+        Toolkit miSistema = Toolkit.getDefaultToolkit();
+        Image miIcono = miSistema.getImage("src/interfacesGraficas/react.png");
+        setIconImage(miIcono);
         setVisible(true);
 
     }
