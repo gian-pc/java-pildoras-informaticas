@@ -17,12 +17,18 @@ class MarcoDibujos extends JFrame {
     public MarcoDibujos(){
         setBounds(300,300,800,450);
         LaminaDibujos miLamina = new LaminaDibujos();
+        //miLamina.setBackground(Color.yellow);
         add(miLamina);
         setVisible(true);
     }
 }
 
 class LaminaDibujos extends JPanel{
+
+    public LaminaDibujos(){
+        setBackground(Color.YELLOW);
+    }
+
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         g.drawRect(20,20,125,75);
@@ -35,7 +41,13 @@ class LaminaDibujos extends JPanel{
         float midash[]={10.0f};
         //BasicStroke milapiz = new BasicStroke(4);
         BasicStroke milapiz = new BasicStroke(4,BasicStroke.CAP_BUTT,BasicStroke.JOIN_MITER,10,midash,0);
+        g2.setPaint(Color.BLUE);
         g2.setStroke(milapiz);
         g2.draw(rectangulo);
+        Color miColor = new Color(125,188,230);
+        //g2.setPaint(Color.RED);
+        //g2.setPaint(miColor);
+        g2.setPaint(new Color(125,188,230));
+        g2.fill(rectangulo);
     }
 }
